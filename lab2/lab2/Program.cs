@@ -3,18 +3,18 @@
 using lab2;
 
 
-string path1 = "C:\\Users\\mrmel\\source\\repos\\inf_sec\\lab2\\lab2\\input1.txt";
-string path2 = "C:\\Users\\mrmel\\source\\repos\\inf_sec\\lab2\\lab2\\input2.txt";
+string path1 = "..\\..\\..\\input1.txt";
+string path2 = "..\\..\\..\\input2.txt";
 FileInfo file1 = new FileInfo(path1);
 FileInfo file2 = new FileInfo(path2);
 
-CubeConGen seq1 = new CubeConGen();
+ConGen seq1 = new ConGen();
 AddGen seq2 = new AddGen();   
 Test1 test1 = new Test1();
 Test2 test2 = new Test2();
 
 string res = "";
-Console.WriteLine("Кубический конгруэнтный генератор:");
+Console.WriteLine("Линейный конгруэнтный генератор:");
 if (!file1.Exists)
 {
     StreamWriter sw = new StreamWriter(path1);

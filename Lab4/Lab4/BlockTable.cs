@@ -40,7 +40,7 @@ namespace lab4
                         prev = cg.generateElem(prev);
                         rr[i] = prev % columns;
                     }
-                    Console.WriteLine(rr[i] + " " + prev);
+                    //Console.WriteLine(rr[i] + " " + prev);
                 }
                 int temp = table[rr[0], rr[1]];
                 table[rr[0], rr[1]] = table[rr[2], rr[3]];
