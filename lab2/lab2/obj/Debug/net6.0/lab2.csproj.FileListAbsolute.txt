@@ -1,0 +1,14 @@
+C:\Users\mrmel\source\repos\inf_sec\lab2\lab2\bin\Debug\net6.0\lab2.exe
+C:\Users\mrmel\source\repos\inf_sec\lab2\lab2\bin\Debug\net6.0\lab2.deps.json
+C:\Users\mrmel\source\repos\inf_sec\lab2\lab2\bin\Debug\net6.0\lab2.runtimeconfig.json
+C:\Users\mrmel\source\repos\inf_sec\lab2\lab2\bin\Debug\net6.0\lab2.dll
+C:\Users\mrmel\source\repos\inf_sec\lab2\lab2\bin\Debug\net6.0\ref\lab2.dll
+C:\Users\mrmel\source\repos\inf_sec\lab2\lab2\bin\Debug\net6.0\lab2.pdb
+C:\Users\mrmel\source\repos\inf_sec\lab2\lab2\obj\Debug\net6.0\lab2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mrmel\source\repos\inf_sec\lab2\lab2\obj\Debug\net6.0\lab2.AssemblyInfoInputs.cache
+C:\Users\mrmel\source\repos\inf_sec\lab2\lab2\obj\Debug\net6.0\lab2.AssemblyInfo.cs
+C:\Users\mrmel\source\repos\inf_sec\lab2\lab2\obj\Debug\net6.0\lab2.csproj.CoreCompileInputs.cache
+C:\Users\mrmel\source\repos\inf_sec\lab2\lab2\obj\Debug\net6.0\lab2.dll
+C:\Users\mrmel\source\repos\inf_sec\lab2\lab2\obj\Debug\net6.0\ref\lab2.dll
+C:\Users\mrmel\source\repos\inf_sec\lab2\lab2\obj\Debug\net6.0\lab2.pdb
+C:\Users\mrmel\source\repos\inf_sec\lab2\lab2\obj\Debug\net6.0\lab2.genruntimeconfig.cache
