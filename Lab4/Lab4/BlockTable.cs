@@ -8,11 +8,11 @@ namespace lab4
 {
     internal class BlockTable
     {
-        public int[,] table = new int[100, 100];
+        public int[,] table = new int[10000, 10000];
 
-        public void getTable(int columns, int rows, string pass)
+        public void getTable(int rows, int columns, string pass)
         {
-            CubeConGen cg = new CubeConGen();
+            ConGen cg = new ConGen();
             MaHash2 ma = new MaHash2();
             cg.generateSeq(ma.calculate(pass));
             int[] rr = new int[4];
@@ -46,6 +46,7 @@ namespace lab4
                 table[rr[0], rr[1]] = table[rr[2], rr[3]];
                 table[rr[2], rr[3]] = temp;
             }
+            /*
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)
@@ -54,12 +55,32 @@ namespace lab4
                 }
                 Console.WriteLine();
             }
-
-
+            */
         }
-        public int encrypt()
+        public int encryptBlock(char cblock, int columns)
         {
-            return 0;
+            Random rand = new Random();
+            char retblock = '1';
+            int sblock = 1;
+            int value = 0;
+            for (int i = 1; i < sblock; i++)
+            {
+                value = value << 8 | Convert.ToByte(cblock);
+            }
+            value = table[value, rand.Next(columns)];
+            for (int i = 1; i < sblock * 2; i++)
+            {
+                retblock = (char)(value);
+                value = value >> 8;
+                Console.WriteLine(retblock);
+            }
+           
+            return retblock;
         }
+    }
+
+    public static class Encryption
+    {
+        
     }
 }
