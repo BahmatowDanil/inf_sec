@@ -21,9 +21,25 @@ namespace lab4
 
         private byte[,] replaceTable;
 
+        private byte[] keyArray = new byte[32];
+
+        private string pass;
+
         #endregion
 
         #region Public Methods and Operators
+
+        public void generateKey(string pass)
+        {
+            MaHash2 maHash2 = new MaHash2();
+            ConGen conGen = new ConGen();
+            conGen.generateSeq(maHash2.calculate(pass));
+            for (int i = 0; i < 32; i++)
+            {
+                keyArray[i] = (byte)conGen.sequence[i];
+            }
+            SetKey(keyArray);
+        }
 
         /// <summary>
         ///     Преобразование из UInt64 в 8 байт

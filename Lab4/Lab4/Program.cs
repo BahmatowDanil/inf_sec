@@ -6,17 +6,7 @@
 
         static void Main(string[] args)
         {
-
-            byte[] Key = {
-                 0x33,  0x20,  0x6d,  0x54,
-                 0x32,  0x6c,  0x65,  0x68,
-                 0x20,  0x65,  0x73,  0x69,
-                 0x62,  0x6e,  0x73,  0x73,
-                 0x79,  0x67,  0x61,  0x20,
-                 0x74,  0x74,  0x67,  0x69,
-                 0x65,  0x68,  0x65,  0x73,
-                 0x73,  0x3d,  0x2C,  0x20
-            };
+           
             byte[] bRepTab = {
                 0x4A,0x92,0xD8,0x0E,0x6B,0x1C,0x7F,0x53,
                 0xEB,0x4C,0x6D,0xFA,0x23,0x81,0x07,0x59,
@@ -27,14 +17,20 @@
                 0xDB,0x41,0x3F,0x59,0x0A,0xE7,0x68,0x2C,
                 0x1F,0xD0,0x57,0xA4,0x92,0x3E,0x6B,0x8C
             };
-
+            string pass;
+            
             Coder cd = new Coder();
             bt = textReader();
-            cd.SetKey(Key); cd.SetReplaceTable(bRepTab);
+            Console.WriteLine("Введите пароль");
+            pass = Console.ReadLine();
+            cd.generateKey(pass); cd.SetReplaceTable(bRepTab);
 
             Console.WriteLine("\n");
             byte[] prvst = cd.SimpleEncoding(bt);  //кодирование простой вставкой 
             Console.WriteLine("{0} - кодирование простой заменой", System.Text.Encoding.ASCII.GetString(prvst));
+            Console.WriteLine("Введите пароль");
+            pass = Console.ReadLine();
+            cd.generateKey(pass);
             Console.WriteLine("{0} - декодирование простой заменой\n", System.Text.Encoding.ASCII.GetString(cd.SimpleDecoding(prvst)));   //декодирование
         }
 

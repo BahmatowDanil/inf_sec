@@ -21,12 +21,12 @@ namespace lab4
             }
         }
 
-        public int generateElem(int key)
+        public Int32 generateElem(int key)
         {
             key = Math.Abs(key);
             key %= len;
             generateSeq(key);
-            return sequence[50];
+            return (Int32)sequence[50];
         }
 
     }
