@@ -1,0 +1,11 @@
+C:\Users\mrmel\source\repos\inf_sec\lab5\lab5\bin\Debug\lab5.exe.config
+C:\Users\mrmel\source\repos\inf_sec\lab5\lab5\bin\Debug\lab5.exe
+C:\Users\mrmel\source\repos\inf_sec\lab5\lab5\bin\Debug\lab5.pdb
+C:\Users\mrmel\source\repos\inf_sec\lab5\lab5\obj\Debug\lab5.csproj.AssemblyReference.cache
+C:\Users\mrmel\source\repos\inf_sec\lab5\lab5\obj\Debug\lab5.csproj.SuggestedBindingRedirects.cache
+C:\Users\mrmel\source\repos\inf_sec\lab5\lab5\obj\Debug\lab5.Form1.resources
+C:\Users\mrmel\source\repos\inf_sec\lab5\lab5\obj\Debug\lab5.Properties.Resources.resources
+C:\Users\mrmel\source\repos\inf_sec\lab5\lab5\obj\Debug\lab5.csproj.GenerateResource.cache
+C:\Users\mrmel\source\repos\inf_sec\lab5\lab5\obj\Debug\lab5.csproj.CoreCompileInputs.cache
+C:\Users\mrmel\source\repos\inf_sec\lab5\lab5\obj\Debug\lab5.exe
+C:\Users\mrmel\source\repos\inf_sec\lab5\lab5\obj\Debug\lab5.pdb
